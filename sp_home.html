@@ -1,0 +1,768 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+  
+
+   <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+   <!-- <link rel="stylesheet" href="/static/css/style.css"> -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+
+
+</head>
+
+
+<body style="background-color:#fafafa;">
+
+<div class="navbar navbar-inverse " style="background-color:white; height:125px; border-radius:0px; border:none;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demo">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="/static/image/1.jpg/" style="margin-top:-15px; height:40px;"></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="demo">
+    <ul class="nav navbar-nav navbar-right ">
+      <form class="navbar-form navbar-left" style="border:none;">
+      <div class="input-group">
+        <input type="text" class="" placeholder="" height="10px" style="borde:1px solid black;">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit" style="border:none;background-color:transparent;border-radius:3px 3px;">&nbsp;&nbsp;
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+          <button class="btn btn-default" type="submit" style="border:none;background-color:transparent;border-radius:3px 3px;">&nbsp;&nbsp;
+            <i class="fa fa-th" style="font-size:1.5em;color:black;"></i>
+          </button>
+          <button class="btn btn-default" type="submit" style="border:none;background-color:transparent;border-radius:3px 3px;">&nbsp;&nbsp;
+            <i class="fa fa-bell" style="font-size:1.5em;color:black;"></i>
+          </button>
+          <img src="/static/image/m2.png/" alt="pic" width="30px;" onclick="profile_page()" height="15px"/>
+          <div id="sp_id" value="{{id}}" style="display: none"></div>
+        </div>
+      </div>
+    </form>pic
+
+    </ul>
+  </div>
+</div>
+
+<div style="background-color:#4169e1; height:50%;margin-top:25px;">
+
+  <div class="">
+    <div class="navbar navbar-inverse" style="background-color:#4169e1; border:none; border-radius:0px;">
+      <div class="container-fluid">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demo1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="demo1">
+          <ul class="nav navbar-nav">
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            <li><a href=""><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" style="width:25px;height:25px"></img></a></li>
+            <li><a href=""><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" style="width:25px;height:25px;"></img></a></li>
+            <li><a href=""><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="Google"  style="width:25px;height:25px;"></img></a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="container"  style="height:auto; margin-top:50px; box-shadow:3px 3px 3px 3px;">
+
+  <div class="row">
+    <div class="col-md-6" style=" margin-top:20px;">
+      <div>
+        <p style="font-size:16px;margin-left:;"><bold>Configuration</bold></p>
+      </div>
+      <div class="col-sm-12">
+
+        <div style="border-bottom:1px solid black;width:100%;font-size:17px;padding:20px;height:auto;">
+          <p>Company Name : <input type="text" id="company" value="" size="auto">  </p>
+          <p>Category Name : <input type="text" id="category" value="" size="auto">  </p>
+        </div>
+        <!-- <form action="/v1/get_sp_home_details/" method="POST">{% csrf_token %} -->
+          
+        <div style=" height:80px; border-bottom:1px solid black; width:100%; font-size:17px; padding:20px; background-color:#f2f2f2 ;">
+          <span> Time Slot : 
+            <select id="time"   name="time">
+              <option  value="45">45 Minutes</option>
+              <option  value="30">30 Minutes</option>
+              <option  value="20">20 Minutes</option>
+              <option  value="10">10 Minutes</option>
+            </select>
+          </span>
+          <span style="display:inline-block;float:right;">Capacity : <input type="text" name="capacity" value="" size="2" id="capacity" height=""> at a time</span>
+        </div>
+
+        <div style="height:80px; border-bottom:1px solid black;width:100%;font-size:17px;padding:12px;">
+          <span >Operating Hours : <select name="operatingfromhrs" id="operatingfromhrs">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select name="operatingfromminutes" id="operatingfromminutes">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option> 
+            <option value="60">60</option>
+          </select>
+          <select name="session" id="session">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+
+          </select></span>
+
+          <span style="display:inline-block;float:right;">to : <select  name="operatingtohrs" id="operatingtohrs" >
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>get_sp_home_details
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select name="operatingtominutes" id="operatingtominutes" >
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>get_sp_home_details
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+          </select>
+          <select name="sessionto" id="sessionto">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+
+          </select>
+          </span>
+        </div>
+        <div style="border-bottom:1px solid black;width:100%;fget_sp_home_detailsont-size:17px;padding:20px;height:auto;">
+          <span >Weekly Holidays :
+            <select name="holiday" id="holiday">
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="choices" id="choices">
+              <option value="half">Half Holidays</option>
+              <option value="full">Full Holidays</option>
+
+            </select>
+            <select name="choices_type" id="choices_type">
+              <option value="FH">First Half</option>
+              <option value="SH">Second Half</option>
+
+            </select>
+          </span>
+
+        </div>operatingtominutes
+        <div style="width:100%;font-size:17px;padding:20px;height:auto;">
+
+            <button type="button" name="button" data-toggle="modal" data-target="#myModal">Festival holidays</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div role="form" action="/wohoo" method="POST">
+ 
+    <div class="multi-field-wrapper">
+      <div class="multi-fields">
+        <div class="multi-field">
+          <input type="text" name="festival" id="festival" placeholder="Festival Name">&nbsp;&nbsp;&nbsp;<input type="text" name="date" placeholder="Date">&nbsp;&nbsp;&nbsp;
+          <input type="text" name="day" placeholder="Day">
+          <button type="button" class="remove-field" style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button>
+        </div>
+      </div>
+    <button type="button" class="add-field" style="background-color:transparent;border-color:transparent;display:inline-block;float:right;"><i class="fa fa-plus-circvar signup=service_user(data);le " style="color:green;font-size: 2.3em"></i></button>
+  </div>
+</div>
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" id="submit" class="btn btn-default">Save</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+          <button type="button" name="button"data-toggle="modal" data-target="#myModall">Unplanned Holidays</button>
+          <div class="modal fade" id="myModall" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <form role="form" action="/wohoo" method="POST">
+
+<div class="multi-field-wrapper">
+<div class="multi-fields">
+  <div class="multi-field">
+    <input type="text" name="unfestival" placeholder="Festival name">&nbsp;&nbsp;&nbsp;<input type="text" name="undate" placeholder="Date">&nbsp;&nbsp;&nbsp;<input type="text" name="unday"placeholder="Day">
+    <button type="button" class="remove-field" style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button>
+  </div>
+</div>
+<button type="button"  class="add-field" style="background-color:transparent;border-color:transparent;display:inline-block;float:right;"><i class="fa fa-plus-circle " style="color:green;font-size: 2.3em"></i></button>
+</div>
+</form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" id="unsubmit" class="btn btn-default" >Save</button>
+                </div>weekly_holiday
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6" style="margin-top:20px">
+      <div style="display:inline-block; float:right;">
+        <a href="#">My Report &nbsp;<img src="/static/image/m2.png/" alt="" width="15px" height="15px"/></a>
+      </div>
+
+      <div class="col-sm-12">
+
+        <div style="background-color:#bababa;border-top:1px solid black;border-bottom:1px solid black;height:70px; width:100%;font-size:17px;padding:20px;">
+
+          <span>Service<span style="display:inline-block;float:right;">Price in&nbsp;<i class="fa fa-inr"></i></span>
+        </div>
+
+        <div role="form" action="/wohoo" method="POST">
+
+  <div class="multi-field-wrapper">
+  <div class="multi-fields">
+  <div class="multi-field" id="add">
+  <div class="info" style="background-color:#bababa;border-top:1px solid black;border-bottom:1px solid black;width:100%;font-size:17px;padding:20px;"><span >
+    <input name="amount" id="amount" value=""  type="text" ></span><span style="display:inline-block;float;margin-left:200px;">
+    <input name ="price" id="price" value="" type="text"/></span>
+   <button type="button" class="remove-field" style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button>
+  </div>
+
+  </div>
+  </div>
+  <div class="" style="display-inline;float:right;">
+    <div class="" style="display:inline-block;float:right;">
+          <button onclick="afterText()" style="background-color:transparent;border-color:transparent;"><i class="fa fa-plus-circle " style="color:green;font-size: 2.3em"></i></button>
+    </div>
+
+  <!-- Add Service<button type="button" class="add-field" style="background-color:transparent;border-color:transparent;display:inline-block;float:right;"><i class="fa fa-plus-circle " style="color:green;font-size: 2.3em"></i></button> --></div>
+  </div>
+  </div>
+      
+
+
+      </div>
+    </div>
+    </div>
+    <hr style="margin-left:12px;width:97%;margin-top:0px;">
+  </div>
+
+  <div class="container">
+    <button id = "service_home_edit" style="background-color: #0b6ac6;height:35px;width: 120px;float: right;margin-top: 10px;color: white;border:1px solid #5dabf7;font-size: 20px;">save</button>
+  </div>
+<script>
+  
+  function afterText() {
+      var txt1 = '<div class="info" style="background-color:#bababa;border-top:1px solid black;border-bottom:1px solid black;width:100%;font-size:17px;padding:20px;"><span ><input name="amount"  type="text"></span><span style="display:inline-block;float;margin-left:200px;"><input name ="price" type="text"/></span><button type="button" class="remove-field" style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button></div>';                   // Create element with HTML
+    //  var txt2 = '<button id="rem"  style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button>'
+
+var data1=document.getElementById("add").innerHTML;
+      document.getElementById("add").innerHTML = data1+txt1;
+  }
+  </script>
+<!-- </form> -->
+  <script>
+  // function get(){
+  //   var service = document.getElementById("serv").value;
+  //   var ser = document.getElementById("serve").value;
+  //   alert(service);
+  //   alert(ser);
+
+
+
+function profile_page(){
+  var sp_id = document.getElementById("sp_id").getAttribute('value');
+  window.location.href = "/v1/service_provider_profile/?sp_id="+sp_id;
+}
+
+
+
+</script>
+<script>
+
+
+var sp_id = document.getElementById("sp_id").getAttribute('value');
+
+$("#service_home_edit").on("click",function() {
+    alert("ok");
+    var service_list = [];
+    var service_info = document.getElementsByClassName('info');
+    for(each=0; each < service_info.length; each++) {
+      var each_service = [];
+      each_service.push(service_info[each].getElementsByTagName("span")[0].getElementsByTagName("input")[0].value);
+      each_service.push(service_info[each].getElementsByTagName("span")[1].getElementsByTagName("input")[0].value);
+      service_list.push(each_service);
+
+    }
+    alert(service_list);
+    time_slot=$('[name="time"]').val();
+    capacity=$('[name="capacity"]').val();
+    working_from =$('[name="operatingfromhrs"]').val();
+    working_fromminute=$('[name="operatingfromminutes"]').val();
+    working_session=$('[name="session"]').val();
+    working_to=$('[name="operatingtohrs"]').val();
+    working_tominute=$('[name="operatingtominutes"]').val();
+    working_sessionto=$('[name="sessionto"]').val();
+    weekly_holiday=$('[name="holiday"]').val();
+    half_holiday=$('[name="choices"]').val();
+    half_holiday_choice=$('[name="choices_type"]').val();
+    
+
+    // alert(time_slot)
+    // alert(capacity)
+    // alert(working_from)
+    // alert(working_fromminute)
+    // alert(working_to)
+    // alert(working_tominute)
+    // alert(weekly_holiday)
+    // alert(half_holiday_choice)
+    // alert(service_name)
+    // alert(amount)
+
+
+var data={"time_slot":time_slot,
+          "capacity":capacity,
+          "working_from":working_from,
+          "working_fromminute": working_fromminute,
+          "working_session":working_session,
+          "working_to":working_to,
+          "working_tominutes":working_tominute,
+          "working_sessionto":working_sessionto,
+          "weekly_holiday":weekly_holiday,
+          "half_holiday":half_holiday,
+          "half_holiday_choice":half_holiday_choice,
+          "service_provider":sp_id,
+          "service_list":service_list.toString()}
+
+var out=serviceout(data);
+ });
+</script>
+
+
+<script>
+var sp_id = document.getElementById("sp_id").getAttribute('value');
+var serviceout=function(data){
+  return $.ajax({
+   type:"POST",
+   async:true,
+   url:"/v1/function/",
+   method:"PUT",
+   crossdomain:true,
+   datatype:'json',
+   data:data,
+   success:function(data){
+     alert("success")
+     window.location.href="/v1/uppi/?id=" + sp_id;
+     console.log(data)
+
+   },
+   error:function(data){
+     alert("error")
+     alert(data.responsetext);
+     console.log(data)}
+});
+}
+</script>
+
+
+
+
+<!-- <script>
+var sp_id = document.getElementById("sp_id").getAttribute('value');
+var serviceout=function(data){
+  return $.ajax({
+   type:"GET",
+   async:true,
+   url:"/v1/uppi/?id="+sp_id  ,
+   method:"GET",
+   crossdomain:true,
+   datatype:'json',
+   data:data,
+   success: function(data) {
+              console.log(data);
+              document.getElementById('time').value = data.time;
+              document.getElementById('capacity').value = data.capacity;
+              document.getElementById('operatingfromhrs').value = data.operatingfromhrs;
+              document.getElementById('operatingfromminutes').value = data.operatingfromminutes;
+              document.getElementById('session').value = data.session;
+              // document.getElementById('time').value = data.time;
+              document.getElementById('operatingtohrs').value = data.operatingtohrs;
+              document.getElementById('operatingtominutes').value = data.operatingtominutes;
+              document.getElementById('sessionto').value = data.sessionto;
+              document.getElementById('holiday').value = data.holiday;
+              document.getElementById('choices').value = data.choices;
+              document.getElementById('amount').value = data.amount;
+              document.getElementById('price').value = data.price;
+
+
+              
+
+              
+            },
+   error:function(data){
+     alert("error")
+     alert(data.responsetext);
+     
+   }
+});
+}
+</script>
+       -->
+
+
+
+
+ <script>
+     $("#submit").on("click",function() {
+      alert("ok");
+      festival_name=$('[name="festival"]').val();
+      festival_date=$('[name="date"]').val();
+      festival_day=$('[name="day"]').val();
+      alert(festival_name)
+      alert(festival_date)
+      alert(festival_day)
+
+
+ var data={"festival_name":festival_name,
+          "festival_date":festival_date,
+          "festival_day":festival_day}
+          
+ var signup=service_user(data);
+ });
+
+
+ </script>
+
+
+
+ <script>
+
+var service_user=function(data){
+    var sp_id = document.getElementById("sp_id").getAttribute('value');
+    alert(sp_id)
+
+ alert("hello")
+ return $.ajax({
+  type:"POST",
+  async:true,
+  url:"/v1/store/?id="+sp_id,
+  method:"POST",
+  crossdomain:true,
+  datatype:'json',
+  data:data,
+    success:function(data){
+      alert("success")
+      alert(data[0].service_provider)
+      window.location.href="/v1/service_provider_edit_home/?id="+data[0].service_provider;
+      console.log(data)
+
+   },
+   error:function(data){
+     alert("error")
+     alert(data.responsetext);
+     console.log(data)
+
+   }
+
+
+});
+}
+</script>
+
+
+ <script>
+     $("#unsubmit").on("click",function() {
+      alert("ok");
+      festival_name=$('[name="unfestival"]').val();
+      festival_date=$('[name="undate"]').val();
+      festival_day=$('[name="unday"]').val();
+      alert(festival_name)
+      alert(festival_date)
+      alert(festival_day)
+
+
+ var data={"name":festival_name,
+          "date":festival_date,
+          "day":festival_day}
+          
+ var sign=service(data);
+ });
+
+
+ </script>
+
+
+
+ <script>
+
+var service=function(data){
+ alert("hello")
+ return $.ajax({
+  type:"POST",
+  async:true,
+  url:"/v1/unplan/",
+  method:"POST",
+  crossdomain:true,
+  datatype:'json',
+  data:data,
+    success:function(data){
+      alert("success")
+      window.location.href="/v1/unplan/"
+      console.log(data)
+
+   },
+   error:function(data){
+     alert("error")
+     alert(data.responsetext);
+     console.log(data)
+
+   }
+
+
+});
+}
+</script>
+<script>
+$(document).ready(function(){
+    var sp_id = document.getElementById("sp_id").getAttribute('value');
+    $.ajax({
+        type : 'GET',
+        async: false,
+        url: "/v1/get_sp_home_details/?id="+sp_id,
+        method: "GET",
+        crossDomain: true,
+        dataType: 'json',
+        // data: data,
+            success: function(data) {
+              console.log(data);
+              document.getElementById('company').value = data.company;
+              document.getElementById('category').value = data.category;
+              document.getElementById('add').innerHTML = "";
+              var services = data.sp_services;
+              var details = data.sp_details;
+              $("#operatingfromhrs").val(details.working_from);
+              $("#operatingfromminutes").val(details.working_fromminute);
+              $("#capacity").val(details.capacity);
+              $("#session").val(details.working_session);
+              $("#operatingtohrs").val(details. working_to);
+              $("#operatingtominutes").val(details.working_tominutes);
+              $("#sessionto").val(details.working_sessionto);
+              $("#holiday").val(details.weekly_holiday);
+              $("#operatingtominutes").val(details.working_tominutes);
+              $("#choices").val(details.half_holiday);
+              if (details.half_holiday == "full") {
+                $("#choices_type").addClass("hide");
+              }
+              else{
+                $("#choices_type").removeClass("hide");
+                $("#choices_type").val(details.half_holiday_choice);
+                
+              }
+
+              var html_value = "";
+              for (i=0; i < services.length; i++) {
+                var txt1 = '<div class="info" style="background-color:#bababa;border-top:1px solid black;border-bottom:1px solid black;width:100%;font-size:17px;padding:20px;"><span ><input name="amount" value="'+ services[i].service_name+'" type="text"></span><span style="display:inline-block;float;margin-left:200px;"><input name ="price" value="'+ services[i].amount+'" type="text"/></span><button type="button" class="remove-field" style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button></div>';
+                html_value = html_value + txt1;
+              }
+              document.getElementById('add').innerHTML = html_value;
+            },
+            error: function(data) {
+              alert(data.responseText);
+              console.log(data)
+            }
+    });
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

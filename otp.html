@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style media="screen">
+  .be-detail-header { border-bottom: 1px solid #edeff2; margin-bottom: 50px; }
+
+  </style>
+  <body>
+    <div class="navbar navbar-inverse " style="background-color:white; height:125px; border-radius:0px; border:none;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+
+
+          <a class="navbar-brand" href="#"><img src="logo.jpg" style="margin-top:-15px; height:40px;"></a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="demo">
+        <ul class="nav navbar-nav navbar-right ">
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div style="background-color:#4169e1; height:50%;margin-top:25px;">
+
+      <div class="">
+        <div class="navbar navbar-inverse" style="background-color:#4169e1; border:none; border-radius:0px;">
+          <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demo1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="demo1">
+              <ul class="nav navbar-nav">
+
+
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="container be-detail-container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <br>
+            <img src="https://cdn2.iconfinder.com/data/icons/luchesa-part-3/128/SMS-512.png" class="img-responsive" style="width:200px; height:200px;margin:0 auto;"><br>
+
+            <h1 class="text-center">Verify your mobile number</h1><br>
+            <p class="lead" style="align:center"></p><p> Thanks for giving your details. An OTP has been sent to your Mobile Number. Please enter the 4 digit OTP below for Successful Registration</p>  <p></p>
+        <br>
+
+            <div>
+            <input type="hidden" id="id" value="{{id}}">
+                <div class="row">
+                <div class="form-group col-sm-8">
+                	 <span style="color:red;"></span>                    <input type="text" class="form-control" id="otp" name="otp" placeholder="Enter your OTP number" required="" value="">
+                </div>
+                <button type="submit" onclick="otp_verify()" class="btn btn-primary  pull-right col-sm-3">Verify</button>
+                </div>
+            </div>
+        <br><br>
+        </div>
+    </div>
+</div>
+
+
+<script>
+  function otp_verify() {
+    otp = document.getElementById("otp").value;
+    id = document.getElementById("id").value;
+    alert(id);
+    alert(otp)
+    var data = {"otp":otp}
+    $.ajax({
+            type : 'GET',
+            async: false,
+            url: "/v1/verify_otp/?id="+id,
+            method: "GET",
+            crossDomain: true,
+            dataType: 'json',
+            data: data,
+                success: function(data) {
+                  window.location.href = "/v1/service_provider_login/" 
+                  console.log(data)
+                },
+                error: function(data) {
+                  alert(data.responseText);
+                  console.log(data)
+                }
+
+        });
+}        
+</script>
+  </body>
+</html>

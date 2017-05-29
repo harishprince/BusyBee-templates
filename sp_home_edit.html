@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  
+
+   <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+   <!-- <link rel="stylesheet" href="/static/css/style.css"> -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+
+
+</head>
+
+
+<body style="background-color:#fafafa;">
+
+<div class="navbar navbar-inverse " style="background-color:white; height:125px; border-radius:0px; border:none;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demo">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="/static/image/1.jpg/" style="margin-top:-15px; height:40px;"></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="demo">
+    <ul class="nav navbar-nav navbar-right ">
+      <form class="navbar-form navbar-left" style="border:none;">
+      <div class="input-group">
+        <input type="text" class="" placeholder="" height="10px" style="borde:1px solid black;">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit" style="border:none;background-color:transparent;border-radius:3px 3px;">&nbsp;&nbsp;
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+          <button class="btn btn-default" type="submit" style="border:none;background-color:transparent;border-radius:3px 3px;">&nbsp;&nbsp;
+            <i class="fa fa-th" style="font-size:1.5em;color:black;"></i>
+          </button>
+          <button class="btn btn-default" type="submit" style="border:none;background-color:transparent;border-radius:3px 3px;">&nbsp;&nbsp;
+            <i class="fa fa-bell" style="font-size:1.5em;color:black;"></i>
+          </button>
+          <img src="/static/image/m2.png/" alt="pic" width="30px;" onclick="profile_page()" height="15px"/>
+          <div id="sp_id" value="{{sp.id}}" style="display: none"></div>
+        </div>
+      </div>
+    </form>pic
+
+    </ul>
+  </div>
+</div>
+
+<div style="background-color:#4169e1; height:50%;margin-top:25px;">
+
+  <div class="">
+    <div class="navbar navbar-inverse" style="background-color:#4169e1; border:none; border-radius:0px;">
+      <div class="container-fluid">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#demo1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="demo1">
+          <ul class="nav navbar-nav">
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            <li><a href=""><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" style="width:25px;height:25px"></img></a></li>
+            <li><a href=""><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" style="width:25px;height:25px;"></img></a></li>
+            <li><a href=""><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="Google"  style="width:25px;height:25px;"></img></a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="container"  style="height:auto; margin-top:50px; box-shadow:3px 3px 3px 3px;">
+
+  <div class="row">
+    <div class="col-md-6" style=" margin-top:20px;">
+      <div>
+        <p style="font-size:16px;margin-left:;"><bold>Configuration</bold></p>
+      </div>
+      <div class="col-sm-12"></div>
+
+        <div style="border-bottom:1px solid black;width:100%;font-size:17px;padding:20px;height:auto;">
+          <div>Company Name : {{sp.company_name}} </div> 
+          <div>Category Name : {{category.category_name}} </div>
+        </div>
+        <!-- <form action="/v1/get_sp_home_details/" method="POST">{% csrf_token %} -->
+        
+
+      {% if sp_details %}
+
+
+
+
+
+        <div style=" height:80px; border-bottom:1px solid black; width:100%; font-size:17px; padding:20px; background-color:#f2f2f2 ;">
+          <span> Time Slot : {{sp_details.time_slot}} Minutes
+            
+          </span>
+          <span style="display:inline-block;float:right;">Capacity :  {{sp_details.capacity}} at a time</span>
+        </div>
+
+        <div style="height:80px; border-bottom:1px solid black;width:100%;font-size:17px;padding:12px;">
+          <span >Operating Hours : from {{sp_details.working_from}}:{{sp_details.working_fromminute}} {{sp_details.working_session}} to {{sp_details.working_to}}:{{sp_details.working_tominutes}} {{sp_details.working_sessionto}}       
+          </span>
+
+          <span style="display:inline-block;float:right;">
+                    </span>
+        </div>
+        <div style="border-bottom:1px solid black;width:100%;fget_sp_home_detailsont-size:17px;padding:20px;height:auto;">
+          <span >Weekly Holidays : {{sp_details.weekly_holiday}}
+            
+            
+          </span>
+
+        </div>
+        {% else %}
+
+        <span>please add your details</span>
+        {% endif %}
+      
+
+                <!-- </div> -->
+                <!-- <div class="modal-footer"> -->
+                <!-- <button/ type="button" id="unsubmit" class="btn btn-default" >Save</button> -->
+                <!-- </div>weekly_holiday -->
+                <!-- </div> -->
+              <!-- </div> -->
+        </div>
+        
+      
+
+    
+
+    <div class="col-md-6" style="margin-top:20px">
+      <div style="display:inline-block; float:right;">
+        <a href="#">My Report &nbsp;<img src="/static/image/m2.png/" alt="" width="15px" height="15px"/></a>
+      </div>
+
+      <div class="col-sm-12">
+
+        <div style="background-color:#bababa;border-top:1px solid black;border-bottom:1px solid black;height:70px; width:100%;font-size:17px;padding:20px;">
+
+          <span>Service<span style="display:inline-block;float:right;">Price in&nbsp;<i class="fa fa-inr"></i></span></span>
+        </div>
+
+        <div>
+
+  <div class="multi-field-wrapper" >
+  <div class="multi-fields" >
+  <div class="multi-field" id="minus" >
+  <div class="multi-field"  id="add"  >
+  <div class="info" style="background-color:#bababa;border-top:1px solid black;border-bottom:1px solid black;width:100%;font-size:17px;padding:20px;"><span>
+ {% if sp_services %}
+{% for i in sp_services %}
+  <span>{{i.service_name}}</span><span>{{i.amount}}</span><hr>
+<!--     <hr style="margin-left:12px;width:97%;margin-top:0px;">
+ -->{% endfor %}
+{% else %}
+<span>please add your services</span>
+{% endif %}
+    <!-- <input name="amount" value=""  type="text" ></span><span style="display:inline-block;float;margin-left:200px;">
+    <input name ="price" value="" type="text"/></span> -->
+   <!-- <button type="button" onclick="beforeText()"  class="remove-field" style="background-color:transparent;border-color:transparent;"><i class="fa fa-minus-circle " style="color:red;font-size: 2.3em"></i></button> -->
+  <!-- </div> -->
+
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="" style="display-inline;float:right;">
+    <div class="" style="display:inline-block;float:right;">
+          <button onclick="afterText()" style="background-color:transparent;border-color:transparent;"><i class="fa fa-plus-circle " style="color:green;font-size: 2.3em"></i></button>
+    </div> -->
+
+  <!-- Add Service<button type="button" class="add-field" style="background-color:transparent;border-color:transparent;display:inline-block;float:right;"><i class="fa fa-plus-circle " style="color:green;font-size: 2.3em"></i></button></div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+      
+
+
+      <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
+  </div>
+  </div></span></div></div></div></div></div></div></div></div></div></div></li></ul></div></div></div></div></div></div>
+
+  <div >
+    <button onclick="edit_sp_details()" style="background-color: #0b6ac6;height:35px;width: 120px;float: right; margin-top: 10px;color: white;border:1px solid #5dabf7;font-size: 20px;">EDIT</button>
+  </div>
+
+  
+<!-- </form> -->
+  <script>
+  // function get(){
+  //   var service = document.getElementById("serv").value;
+  //   var ser = document.getElementById("serve").value;
+  //   alert(service);
+  //   alert(ser);
+//}
+
+
+function profile_page(){
+  var sp_id = document.getElementById("sp_id").getAttribute('value');
+  window.location.href = "/v1/service_provider_profile/?sp_id="+sp_id;
+}
+
+
+
+</script>
+
+
+
+<script>
+function edit_sp_details(){
+  var sp_id = document.getElementById("sp_id").getAttribute('value');
+  window.location.href = "/v1/service_provider_edit_home/?id="+sp_id; 
+}
+</script>
+
+</body>
+</html>

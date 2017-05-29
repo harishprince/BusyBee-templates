@@ -1,0 +1,204 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery Push.js Plugin Demo</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+</style>
+            <style type="text/css">
+            .input {
+            font-family: 'FontAwesome', 'Arial';
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            font-size: 14px;
+            }
+        
+ .navbar-inverse .navbar-nav > li > a {
+     color: black !important;
+ }
+
+
+ .navbar-brand img {
+     width: 200px;
+     height: 60px;
+     margin-top: -12px;
+ }
+
+ .navbar-inverse {
+     background-color: white;
+     border-color: white;
+     
+ }
+</style>
+
+
+<body>
+
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container" style="width:100%;">
+            <div class="navbar-header" style="width:100%;height:75px;">
+                <a class="navbar-brand" runat="server" href="~/" >
+                    <img src="/static/image/1.jpg/" style="width:100%;"></a>
+                <div class="col-md-5 col-sm-6 col-xs-10 navbar-right">
+                    <div class="navbar-form " role="search" style="border: none;">
+                    <!--
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="max-width: 100%; width: 100%;">
+                            
+                            <div class="input-group-btn">
+                            
+                                <button class="btn btn-default" style="background: rgb(72, 166, 72); height:34px;" type="submit"><i class="glyphicon glyphicon-search"></i>
+                                </button>
+                                <i class="fa fa-search" style="margin-left:5px; font-size: 1.3em;"></i>
+                <i class="fa fa-th" style="margin-left:14px; font-size: 1.5em;"></i>
+                <i class="fa fa-bell"style="margin-left:25px;font-size: 1.5em;display:inline-block;margin-top:5px;"></i>
+                                
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+<div style="background-color:#fafafa;">
+
+       <div class="container" style="border:2px solid blue; width:100%; height:50px; background-color:blue;">
+            <div class="col-sm-2 col-sm-3 col-xs-8 navbar-right ">
+      
+    
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                                <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" style="width:30px;height:25px; margin-left:px;margin-top:10px;"></img>
+                            </a>
+                            <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                                <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" style="width:30px;height:25px; margin-left:10px;margin-top:10px;"></img>
+                            </a>            
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                                <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="Google"  style="width:30px;height:25px; margin-left:10px;margin-top:10px;"></img> 
+                            </a>
+                            
+    </div>
+
+        </div>
+            <div class="row">
+            
+                <div class="container-fluid" style="background-color:#ffffff;height:550px;margin-left:80px;padding-top:15px;margin-right:55px;margin-top:15px;border-shadow:1px;">
+        
+                    <div  style="width: auto;height: auto;">
+                
+                         <div class="col-sm-2" ></div>
+                            <fieldset class="col-sm-8" style="height:450px;border-radius:10px;margin-top:45px;border: 2px solid #A9A9A9;">  
+                            <legend style="margin-left:5%;width:auto;border-bottom: none;border-left: 2px solid #A9A9A9;border-right: 2px solid #A9A9A9;"> &nbsp;Create Service provider an Account &nbsp;</legend>
+        
+                            <p id="error" style="color: red;text-align: center;">&nbsp;</p>
+                            
+                            <div class="col-sm-4" ></div>
+                            <div class="col-sm-4 col-sm-5 col-xs-8" style="display: inline-block;">
+
+                              <div class="form-signin">
+                                <div id="write"></div>
+                                 <div id="reed"></div>
+                                <h2 class="form-signin-heading">Please sign in</h2>
+                                <label for="inputEmail" class="sr-only" >Login Id/Mobile</label>
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Login Id/Mobile                             &#xf007" required=""  style="width: 270px;max-width: 100%;border-radius:0px;margin-left:&#xf007;background-color:#fafafa; font-family: 'FontAwesome', 'Arial'; font-style: normal;"><br>
+                                <label for="inputPassword" class="sr-only">Password</label>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password                                       &#xf084" required="" style="width: 270px;max-width: 100%;border-radius:0px; font-family: 'FontAwesome', 'Arial'; font-style: normal;"><br>
+                                
+                                
+                               <button class="btn btn-lg btn-primary btn-block" type="button" style="width: 275px;max-width: 100%;border-radius:0px;" onclick="call()">Sign in</button>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="remember-me"> Remember me
+                                  </label>
+                                
+                                <div  style="display: inline-block;margin-top:-18px;">
+                                <a href="#" style="font-size: 13px;margin-left: 130px;color: #7f7fff;text-decoration: underline;margin-top:10px;">Forgot Password?</a>
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                              </div>
+                             
+    </div>
+    
+     <div class="row">
+     <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                              <div class ="col-sm-7"></div>
+                              <div class ="col-sm-5">
+                                    <p style="font-size: 15px;margin-top:50px;">Done have an account?
+                                    <span style="font-size:20px;">new user</span>
+                                        <a href="#" id= "service_registration" style="color: #7f7fff;">registration</a>
+                                    </p>
+                                    </div>
+                    </fieldset>
+        </div>
+        <br><br>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    function call(){
+        var email = document.getElementById("inputEmail").value;
+        var password = document.getElementById("inputPassword").value;
+        //alert(a);
+    
+
+        if (email.trim().length > 3 && email.length < 30)
+        {
+             if (password.trim().length > 3 && password.length < 30){
+                var data = {
+                    "mobile" : email,
+                    "password": password
+                }
+                $.ajax({
+                        type : 'GET',
+                        async: false,
+                        url: "/v1/service_provider_logingin/",
+                        method: "POST",
+                        crossDomain: true,
+                        dataType: 'json',
+                        data: data,
+                            success: function(data) {
+                              console.log(data);
+                              window.location.href = "/v1/uppi/?id="+data.id; 
+                            },
+                            error: function(data) {
+                              alert(data.responseText);
+                              console.log(data)
+                            }
+
+                    });
+                } else {
+                document.getElementById("reed").innerHTML = "enter valid password";
+                return false;
+            }
+        }
+         else {
+        document.getElementById("write").innerHTML = "enter valid login id/phone number ";
+        return false;
+    }
+
+
+
+
+
+    }
+    </script>
+</body>
+</html>
